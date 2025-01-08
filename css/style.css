@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#home{
+    height: 100vh;
+    background-image: url("../image/home-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    height: 50px;
+}
+.drop{
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#expertise{
+    height: auto;
+}
+#work
+{
+    height: 100vh;
+}
+.html-css{
+}
