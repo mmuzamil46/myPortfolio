@@ -52,28 +52,37 @@
     <h1 class="mt-5 display-1 fw-bolder">My Expertise</h1>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center mt-2 ml-5 ">
    <div class="container-fluid d-flex flex-lg-row flex-column justify-content-center align-items-center mt-2 gap-5">
-    <div class="html-css ">
+    <div class="html-css d-flex justify-content-center align-items-center" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)">
         <!-- HTML/CSS AND JavaScript -->
-         <img src="./image/logo-1.png"  width="400" height="300"  alt="">
+         <img src="./image/logo-1.png" class="" width="400" height="300"  alt="" id="hcj" >
+         <p class="text-dark text-center fs-4 d-none" id="desc">Proficient in HTML, CSS, and Java. Experienced in designing and developing user-friendly web interfaces, ensuring responsive design, and implementing best coding practices.</p>
     </div>
-    <div class="mongo ">
+    <div class="mongo  d-flex justify-content-center align-items-center" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)">
         <!-- MongoDB -->
-<img src="./image/mongo.jpg" width="400" height="300" alt="">
+<img src="./image/mongo.jpg" class="" width="400" height="300" alt="">
+<p class="text-dark text-center d-none fs-4">Proficient in MongoDB. Experienced in managing NoSQL databases, designing efficient data models, optimizing queries, and ensuring data security and integrity.</p>
     </div>
-    <div class="express  ">
+    <div class="express  d-flex justify-content-center align-items-center" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)">
         <!-- Express -->
         <img src="./image/expressjs.png" width="400" height="300" alt="">
+        <p class="text-center text-dark fs-4 d-none">Proficient in Express.js.Experienced in building scalable web applications, creating RESTful APIs, handling middleware, and ensuring robust server-side logic and security.</p>
     </div>
    </div>
 
       <div class="container-fluid d-flex flex-lg-row flex-column justify-content-center align-items-center mt-2 gap-5">
-        <div class="react  ">
+        <div class="react  d-flex justify-content-center align-items-center" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)">
             <!-- React -->
             <img src="./image/reactjs.jpeg" width="400" height="300" alt="">
+            <p class="text-dark text-center fs-4 d-none">
+                Proficient in React. Experienced in building dynamic, responsive user interfaces, managing state with hooks, implementing component-based architecture, and optimizing performance for high-quality web applications.
+            </p>
         </div>
-        <div class="node   ">
+        <div class="node  d-flex justify-content-center align-items-center" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)">
             <!-- Node Js -->
             <img src="./image/node jas.jpg" width="400" height="300" alt="">
+            <p class="text-dark text-ceneter fs-4 d-none">
+                Proficient in Node.js. Experienced in building server-side applications, handling asynchronous operations, managing databases, and ensuring high performance and responsiveness.
+            </p>
         </div>
       </div>
     </div>
