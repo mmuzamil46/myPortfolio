@@ -22,11 +22,14 @@ header{
     align-items: center;
     flex-direction: column;
 }
-#expertise{
-    height: auto;
-}
+/* #expertise{
+    height: 100vh;
+} */
 #work
 {
+    height: 100vh;
+}
+#experience{
     height: 100vh;
 }
 .fields{
@@ -38,3 +41,22 @@ header{
     height: 100px;
     padding-left: 20px;
 }
+.under{
+    text-decoration: none;
+}
+#footer .under{
+    font-size: 12px;
+}
+#footer p{
+    font-size: 12px;
+
+}
+.under:hover{
+    text-decoration: underline;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+

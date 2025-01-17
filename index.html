@@ -10,29 +10,29 @@
 
 </head>
 <body>
-    <header class="container-fluid d-flex justify-content-center align-items-center   fixed-top">
+    <header class="container-fluid d-flex justify-content-center align-items-center   fixed-top bg-dark">
         <ul class="d-flex justify-content-between list-unstyled container-fluid align-items-center gap-5 px-3">
          <li class="d-block d-md-none">
             <ul class="list-unstyled d-flex align-items-center justify-content-center mt-2">
-                <li><i class="fa-solid fa-ellipsis fs-4" onclick="dropdown()"></i></li>
+                <li><i class="fa-solid fa-ellipsis fs-4 text-light" onclick="dropdown()"></i></li>
             </ul>
          </li>
             <li class="d-none d-md-block" id="drop">
-                <ul class="d-flex justify-content-between list-unstyled gap-5">
-                    <li ><a href="" class="text-decoration-none text-dark">HOME</a> </li>
-                    <li ><a href="" class="text-decoration-none text-dark">EXPERTISE</a> </li>
-                    <li ><a href="" class="text-decoration-none text-dark">WORK</a> </li>
-                    <li ><a href="" class="text-decoration-none text-dark">EXPERIENCE</a> </li>
-                    <li ><a href="" class="text-decoration-none text-dark">CONTACT</a> </li>
+                <ul class="d-flex justify-content-between align-items-center list-unstyled gap-5">
+                    <li ><a href="#home" class=" text-light under">HOME</a> </li>
+                    <li ><a href="#expertise" class="under text-light">EXPERTISE</a> </li>
+                    <li ><a href="#work" class="under text-light">WORK</a> </li>
+                    <li ><a href="#experience" class="under text-light">EXPERIENCE</a> </li>
+                    <li ><a href="#contact" class="under text-light">CONTACT</a> </li>
                 </ul>
 
             </li>
             <li> 
                 <ul class="list-unstyled mt-3">
                     <li>
-                    <button class="btn btn-dark d-none d-md-block">DOWNLOAD RESUME</button>
+                    <button class="btn btn-light d-none d-md-block">DOWNLOAD RESUME</button>
                 </li>
-                <li><i class="fa-regular fa-circle-down d-block d-md-none"></i></li>
+                <li><i class="fa-regular fa-circle-down d-block d-md-none fs-4 text-light"></i></li>
             </ul>
             </li>
 
@@ -40,7 +40,16 @@
 
 
     </header>
-<section id="home" class="container-fluid d-flex justify-content-center align-items-center ">
+    <div class="socials pl-2">
+        <ul class="list-unstyled d-flex flex-column justify-content-start align-items-center  position-fixed top-50 start-0">
+            <li><a href="tel:+251978736489" class="text-dark text-decoration-none fs-2"><i class="fa-solid fa-phone"></i></a></li>
+            <li><a href="" class="text-dark text-decoration-none fs-2"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="" class="text-dark text-decoration-none fs-2"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="" class="text-dark text-decoration-none fs-2"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="" class="text-dark text-decoration-none fs-2"><i class="fa-brands fa-telegram"></i></a></li>
+        </ul>
+    </div>
+<section id="home" class="container-fluid d-flex justify-content-center align-items-center mt-5">
     
         <div class="container  d-flex  flex-column justify-content-center align-items-center mb-5">
             <h1 class="display-2 fw-bolder text-center">MUHAMMED MUZAMIL OUSMAN</h1>
@@ -48,50 +57,73 @@
         </div>
 </section>
 
-<section id="expertise"   class="container-fluid bg-secondary-subtle d-flex flex-column justify-content-center align-items-center my-3 pb-5">
+<!-- <section id="expertise"   class="container-fluid bg-secondary-subtle d-flex flex-column justify-content-center align-items-center my-3 pb-5">
     <h1 class="mt-5 display-1 fw-bolder">My Expertise</h1>
-    <div class="container-fluid d-flex flex-column justify-content-center align-items-center mt-2 ml-5 ">
-   <div class="container-fluid d-flex flex-lg-row flex-column justify-content-center align-items-center mt-2 gap-5">
-    <div class="html-css fields d-flex justify-content-center align-items-center" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)">
-        <!-- HTML/CSS AND JavaScript -->
-         <img src="./image/logo-1.png" class="" width="400" height="300"  alt="" id="hcj" >
-         <p class="text-dark text-center fs-4 d-none" id="desc">Proficient in HTML, CSS, and Java. Experienced in designing and developing user-friendly web interfaces, ensuring responsive design, and implementing best coding practices.</p>
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center mt-5">
+        <div class="container-fluid d-flex flex-lg-row flex-column justify-content-center align-items-center gap-2 flex-grow-2 ">
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-center border-2 border border-black">
+                <h2 class="text-center"><i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i></h2>
+                <p class="text-dark text-center fs-4 " id="desc">Proficient in HTML, CSS, and JavaScript. Experienced in designing and developing user-friendly web interfaces, ensuring responsive design, and implementing best coding practices.</p>
+            </div>
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-center border-2 border border-black">
+                <h2 class="text-center"><i class="fa-brands fa-react"></i></h2>
+                <p class="text-dark text-center fs-4 ">
+                    Proficient in React. Experienced in building dynamic, responsive user interfaces, managing state with hooks, implementing component-based architecture, and optimizing performance for high-quality web applications.
+                </p>
+            </div>
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-center border-2 border border-black">
+                <h2 class="text-center"><i class="fa-brands fa-node"></i></h2>
+                <p class="text-dark text-ceneter fs-4 ">
+                    Proficient in Node.js. Experienced in building server-side applications, handling asynchronous operations, managing databases, and ensuring high performance and responsiveness.
+                </p>
+            </div>
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-center border-2 border border-black">
+                <h2 class="text-center"><i class="fa-brands fa-node"></i></h2>
+                <p class="text-center text-dark fs-4 ">Proficient in Express.js.Experienced in building scalable web applications, creating RESTful APIs, handling middleware, and ensuring robust server-side logic and security.</p>
+ 
+            </div>
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-center border-2 border border-black">
+                <h2 class="text-center"><i class="fa-brands fa-node"></i></h2>
+                <p class="text-dark text-center  fs-4">Proficient in MongoDB. Experienced in managing NoSQL databases, designing efficient data models, optimizing queries, and ensuring data security and integrity.</p>
+ 
+            </div>
+        </div>
     </div>
-    <div class="mongo  d-flex justify-content-center align-items-center" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)">
-        <!-- MongoDB -->
-<img src="./image/mongo.jpg" class="" width="400" height="300" alt="">
-<p class="text-dark text-center d-none fs-4">Proficient in MongoDB. Experienced in managing NoSQL databases, designing efficient data models, optimizing queries, and ensuring data security and integrity.</p>
-    </div>
-    <div class="express  d-flex justify-content-center align-items-center" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)">
-        <!-- Express -->
-        <img src="./image/expressjs.png" width="400" height="300" alt="">
-        <p class="text-center text-dark fs-4 d-none">Proficient in Express.js.Experienced in building scalable web applications, creating RESTful APIs, handling middleware, and ensuring robust server-side logic and security.</p>
-    </div>
-   </div>
 
-      <div class="container-fluid d-flex flex-lg-row flex-column justify-content-center align-items-center mt-2 gap-5">
-        <div class="react  d-flex justify-content-center align-items-center" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)">
-            <!-- React -->
-            <img src="./image/reactjs.jpeg" width="400" height="300" alt="">
-            <p class="text-dark text-center fs-4 d-none">
-                Proficient in React. Experienced in building dynamic, responsive user interfaces, managing state with hooks, implementing component-based architecture, and optimizing performance for high-quality web applications.
-            </p>
-        </div>
-        <div class="node  d-flex justify-content-center align-items-center" onmouseover="showDesc(this)" onmouseleave="hideDesc(this)">
-            <!-- Node Js -->
-            <img src="./image/node jas.jpg" width="400" height="300" alt="">
-            <p class="text-dark text-ceneter fs-4 d-none">
-                Proficient in Node.js. Experienced in building server-side applications, handling asynchronous operations, managing databases, and ensuring high performance and responsiveness.
-            </p>
-        </div>
-      </div>
-    </div>
   
 
+</section> -->
+<section id="expertise" class="container-fluid bg-secondary-subtle d-flex flex-column justify-content-center align-items-center my-3 pb-5">
+    <h1 class="mt-5 display-1 fw-bolder">My Expertise</h1>
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center mt-5">
+        <div class="container-fluid d-flex flex-lg-row flex-column justify-content-center align-items-center gap-2 flex-grow-1">
+            <div class="d-flex flex-column justify-content-center align-items-center border-2 border border-black p-3 flex-fill">
+                <h2 class="text-center"><i class="fa-brands fa-html5 display-5"></i> <i class="fa-brands fa-css3-alt display-5"></i> <i class="fa-brands fa-js display-5"></i></h2>
+                <p class="text-dark text-center fs-4">Proficient in HTML, CSS, and JavaScript. Experienced in designing and developing user-friendly web interfaces, ensuring responsive design, and implementing best coding practices.</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center border-2 border border-black p-3 flex-fill">
+                <h2 class="text-center"><i class="fa-brands fa-react display-3"></i></h2>
+                <p class="text-dark text-center fs-4">Proficient in React. Experienced in building dynamic, responsive user interfaces, managing state with hooks, implementing component-based architecture, and optimizing performance for high-quality web applications.</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center border-2 border border-black p-3 flex-fill">
+                <h2 class="text-center"><i class="fa-brands fa-node display-3"></i></h2>
+                <p class="text-dark text-center fs-4">Proficient in Node.js. Experienced in building server-side applications, handling asynchronous operations, managing databases, and ensuring high performance and responsiveness.</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center border-2 border border-black p-3 flex-fill">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/express-js.png" alt="express-js"/>
+                <p class="text-center text-dark fs-4">Proficient in Express.js. Experienced in building scalable web applications, creating RESTful APIs, handling middleware, and ensuring robust server-side logic and security.</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center border-2 border border-black p-3 flex-fill">
+                <img width="48" height="48" src="https://img.icons8.com/color/48/mongo-db.png" alt="mongo-db" style="filter: grayscale(100%) invert(100%);"/>
+                <p class="text-dark text-center fs-4">Proficient in MongoDB. Experienced in managing NoSQL databases, designing efficient data models, optimizing queries, and ensuring data security and integrity.</p>
+            </div>
+        </div>
+    </div>
 </section>
+
 <section id="work" class="bg-secondary-subtle d-flex flex-column justify-content-start align-items-center mb-4">
     <h1 class="mt-5 display-1 fw-bolder">MY WORK</h1>
-    <div class="container-fluid d-flex justify-content-start align-items-center px-2">
+    <div class="container-fluid d-flex justify-content-center align-items-center px-2 ml-5">
       <a href="https://github.com/mmuzamil46/appleHomePageClone" class="text-dark text-decoration-none">
         <div class="d-flex flex-column-reverse justify-content-center align-items-center mt-4 px-3 border-2 border border-black">
             <h2>Apple Home Page Clone</h2>
@@ -103,7 +135,7 @@
 
 </section>
 
-<section id="experience " class="container-fluid d-flex flex-column justify-content-center align-items-center bg-secondary-subtle mb-4">
+<section id="experience" class="container-fluid d-flex flex-column justify-content-start align-items-center bg-secondary-subtle mb-4">
     <h1 class="mt-5 display-1 fw-bolder">MY EXPERIENCE</h1>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center mt-5">
         <div class="container-fluid d-flex flex-lg-row flex-column justify-content-center align-items-center gap-5">
@@ -124,7 +156,7 @@
 </section>
 <section id="contact" class="container-fluid d-flex flex-column justify-content-center align-items-center bg-secondary-subtle mb-4">
     <h1 class="mt-5  display-1 fw-bolder">CONTACT</h1>
-    <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+    <div class="d-flex flex-column justify-content-center align-items-center mt-3">
         <img src="/image/profile.jpg" alt="" class="rounded-circle my-2" width="100" height="100">
         <h4>Contact Address:</h4>
         <p class="fw-bolder text-muted">kolfe keranio,woreda 03, alembank square</p>
@@ -139,14 +171,14 @@
     </div>
 </section>
 <footer id="footer" class="d-flex justify-content-between align-items-center bg-dark ">
-<div class="d-flex justify-content-between align-items-center pl-3 container-fluid">
-    <ul class="list-unstyled text-light d-flex justify-content-center align-items-center gap-4">
-        <li><a href="" class="text-light text-decoration-none">HOME</a></li>
-    <li><a href="" class="text-light text-decoration-none">EXPERTISE</a></li>
-    <li><a href="" class="text-light text-decoration-none">WORK</a></li>
-    <li><a href="" class="text-light text-decoration-none">EXPERIENCE</a></li>
-    <li><a href="" class="text-light text-decoration-none">CONTACT</a></li></ul>
-    <p class="text-light">All Rights Reserved <i class="fa-regular fa-copyright"></i>Muhammed Muzamil</p>
+<div class="d-flex flex-column flex-md-row justify-content-between align-items-center pl-3 container-fluid">
+    <ul class="list-unstyled text-light d-flex  justify-content-center align-items-center gap-4">
+        <li><a href="" class="text-light  under">HOME</a></li>
+    <li><a href="" class="text-light   under">EXPERTISE</a></li>
+    <li><a href="" class="under text-light ">WORK</a></li>
+    <li><a href="" class="text-light  under">EXPERIENCE</a></li>
+    <li><a href="" class="text-light  under">CONTACT</a></li></ul>
+    <p class="text-light">All Rights Reserved.<i class="fa-regular fa-copyright"></i> Muhammed Muzamil</p>
 </div>
 </footer>
 <script src="./js/script.js"></script>
