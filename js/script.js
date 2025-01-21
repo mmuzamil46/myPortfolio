@@ -24,6 +24,6 @@ if(buton.classList.contains('fa-ellipsis')){
 }else{
     buton.classList.remove('fa-x');
     buton.classList.add('fa-ellipsis');
-    drop.style.opacity = 0;
+    
 }
 }
