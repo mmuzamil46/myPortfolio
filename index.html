@@ -11,19 +11,19 @@
 </head>
 <body>
     <header class="container-fluid d-flex justify-content-center align-items-center   fixed-top bg-dark">
-        <ul class="d-flex justify-content-between list-unstyled container-fluid align-items-center gap-5 px-3">
+        <ul class="d-flex justify-content-between list-unstyled container-fluid align-items-center gap-5 px-3 " id="nav">
          <li class="d-block d-md-none">
             <ul class="list-unstyled d-flex align-items-center justify-content-center mt-2">
-                <li><i class="fa-solid fa-ellipsis fs-4 text-light" onclick="dropdown()"></i></li>
+                <li><i class="fa-solid fa-ellipsis fs-4 text-light" onclick="dropdown()" id="buton"></i></li>
             </ul>
          </li>
-            <li class="d-none d-md-block" id="drop">
-                <ul class="d-flex justify-content-between align-items-center list-unstyled gap-5">
-                    <li ><a href="#home" class=" text-light under">HOME</a> </li>
-                    <li ><a href="#expertise" class="under text-light">EXPERTISE</a> </li>
-                    <li ><a href="#work" class="under text-light">WORK</a> </li>
-                    <li ><a href="#experience" class="under text-light">EXPERIENCE</a> </li>
-                    <li ><a href="#contact" class="under text-light">CONTACT</a> </li>
+            <li class=" d-none d-md-block " id="drop">
+                <ul class="d-flex flex-md-row flex-column  justify-content-between align-items-center list-unstyled gap-4 ">
+                    <li ><a href="#home" class=" text-white under">HOME</a> </li>
+                    <li ><a href="#expertise" class="under text-white">EXPERTISE</a> </li>
+                    <li ><a href="#work" class="under text-white">WORK</a> </li>
+                    <li ><a href="#experience" class="under text-white">EXPERIENCE</a> </li>
+                    <li ><a href="#contact" class="under text-white">CONTACT</a> </li>
                 </ul>
 
             </li>
@@ -173,11 +173,11 @@
 <footer id="footer" class="d-flex justify-content-between align-items-center bg-dark ">
 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pl-3 container-fluid">
     <ul class="list-unstyled text-light d-flex  justify-content-center align-items-center gap-4">
-        <li><a href="" class="text-light  under">HOME</a></li>
-    <li><a href="" class="text-light   under">EXPERTISE</a></li>
-    <li><a href="" class="under text-light ">WORK</a></li>
-    <li><a href="" class="text-light  under">EXPERIENCE</a></li>
-    <li><a href="" class="text-light  under">CONTACT</a></li></ul>
+        <li><a href="#home" class="text-light  under">HOME</a></li>
+    <li><a href="#expertise" class="text-light   under">EXPERTISE</a></li>
+    <li><a href="#work" class="under text-light ">WORK</a></li>
+    <li><a href="#experience" class="text-light  under">EXPERIENCE</a></li>
+    <li><a href="#contact" class="text-light  under">CONTACT</a></li></ul>
     <p class="text-light">All Rights Reserved.<i class="fa-regular fa-copyright"></i> Muhammed Muzamil</p>
 </div>
 </footer>
