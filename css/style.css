@@ -13,29 +13,36 @@
 header{
     height: 50px;
 }
-.drop{
-    background-color: white;
-    color: black;
-    width: 100%;
-    display: flex !important;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+#drop ul li:hover a{
+    color: black !important;
 }
-/* #expertise{
-    height: 100vh;
-} */
+ #expertise{
+    min-height: 95vh;
+} 
 #work
 {
     height: 100vh;
 }
 #experience{
-    height: 100vh;
+    min-height: 90vh;
+}
+#expertise p{
+    font-size: 15px;
 }
 .fields{
     box-shadow: 12px 12px 8px 8px rgba(0, 0, 0, 0.3);
 }
+.socials{
+    position: fixed;
+    top: 35%;
+    left: 0;
+    padding-left: 8px;
+    z-index: 5000;
+}
+/* .socials ul li{
+    display: block;
 
+} */
 
 #footer{
     height: 100px;
@@ -53,30 +60,65 @@ header{
 }
 .under:hover{
     text-decoration: underline;
+    /* color: black !important; */
+}
+.menu li{
+    display: block;
+    min-width: 60px;
+    margin: 10px;
+    text-align: center;
+}
+.menu ul li .active{
+    background-color: white;
+    color: black !important;
+}
+.menu li:hover{
+background-color: aliceblue;
+
 }
 a:hover{
     text-decoration: underline;
 }
 
 
-
-@media screen and (max-width: 768px) {
-    #nav{
-        position: relative;
-    }
-    #drop{
-        position: absolute;
-        top: 50px;
-        left: 55px;
-       width: 100%;
-        background: #212529;
-        width: 80%;
-        transition: opacity 0.5s ease, visibility 0.5s ease; 
-        opacity: 0;
-    }
-    
-#experience{
-    height: auto;
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 99vh;
+    width: 0%;
+    z-index: 10000;
 }
+
+.side-menu {
+    margin-top: 20px;
+}
+.side-bar button{
+    width: 100% !important;
+}
+.side-menu li{
+    width: 100%;
+    display: block;
+   height: 30px;
+   padding-left: 8px;
+    transition: .2s ease-in-out;
+}
+.side-menu li a{
+    text-decoration: none;
+    color:white;
+    width: 100%;
+    display: block;
+}
+.side-menu li:hover a{
+    color:black
+}
+@media screen and (max-width: 768px) {
  
+    
+
 }
