@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #0f172a;
+  --color-accent: #38bdf8;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-dark);
+    color: #e2e8f0; /* slate-200 */
+    font-family: var(--font-sans);
+  }
+}
+
+.glass-nav {
+  @apply bg-dark/80 backdrop-blur-md border-b border-slate-800;
+}
