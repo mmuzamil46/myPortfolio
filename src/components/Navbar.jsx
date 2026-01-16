@@ -12,6 +12,28 @@ const Navbar = () => {
     { name: 'Contact', href: '#contact' },
   ];
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    setIsOpen(false); // Close first
+
+    setTimeout(() => {
+      // Handle "Home" or top of page
+      if (href === '#home' || href === '#') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      const element = document.querySelector(href);
+      if (element) {
+        const offsetTop = element.offsetTop;
+        window.scrollTo({
+          top: offsetTop - 80, // Offset for header
+          behavior: 'smooth'
+        });
+      }
+    }, 300); // Wait for menu to close
+  };
+
   return (
     <nav className="fixed top-0 w-full z-50 glass-nav">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,7 +43,7 @@ const Navbar = () => {
               Muhammed
             </a>
           </div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
@@ -63,14 +85,13 @@ const Navbar = () => {
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navLinks.map((link) => (
-                <a
+                <button
                   key={link.name}
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800"
+                  onClick={(e) => handleNavClick(e, link.href)}
+                  className="w-full text-left block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800 cursor-pointer"
                 >
                   {link.name}
-                </a>
+                </button>
               ))}
               <button className="w-full mt-4 flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
                 <Download size={16} /> Download Resume
